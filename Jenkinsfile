@@ -4,26 +4,20 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Checkout the code from the repository
                 git branch: 'main', url: 'https://github.com/Mouaidnasab/Workout-Analysis'
             }
         }
-        stage('Build') {
+        stage('Install Dependencies') {
             steps {
-                // Example build step (replace with your build command)
-                sh 'echo "Building the project..."'
+                sh 'python3 -m venv venv'
+                sh '. venv/bin/activate'
+                sh 'pip install -r requirements.txt'
             }
         }
-        stage('Test') {
+        stage('Run Tests') {
             steps {
-                // Example test step (replace with your test command)
-                sh 'echo "Running tests..."'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                // Example deploy step (replace with your deploy command)
-                sh 'echo "Deploying the project..."'
+                sh '. venv/bin/activate'
+                sh 'python -m unittest discover -s .'
             }
         }
     }
