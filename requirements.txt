@@ -18,7 +18,6 @@ blender==1.4
 blinker==1.6.3
 boto3==1.34.123
 botocore==1.34.151
-bpy==4.2.0
 cachetools==5.4.0
 certifi==2023.7.22
 cffi==1.16.0
