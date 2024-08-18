@@ -9,14 +9,14 @@ pipeline {
         }
         stage('Install Dependencies') {
             steps {
-                sh 'python3 -m venv venv'
-                sh '. venv/bin/activate'
+                // Install dependencies globally
+                sh 'pip install --upgrade pip'
                 sh 'pip install -r requirements.txt'
             }
         }
         stage('Run Tests') {
             steps {
-                sh '. venv/bin/activate'
+                // Run the tests using the globally installed packages
                 sh 'python -m unittest discover -s .'
             }
         }
