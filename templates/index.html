@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pose Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="detailedFeedback" class="feedback">Feedback: </div>
+            <div class="title">Work Out Analyzer</div>
+        </header>
+        <div class="content">
+            <div class="sidebar">
+                <div id="counter" class="widget">Counter: </div>
+                <div id="stage" class="widget">Current stage: </div>
+                <div id="poseLabel" class="widget"></div>
+                <div id="anglesStatus" class="widget">Joints status: </div>
+                <div id="workouts" class="widget">
+                    Workouts
+                    <select id="workoutsSelect" class="actionButton">
+                        <option value="workout1" selected>Pushups</option>
+                        <option value="workout2">Squats</option>
+                        <option value="workout3">Crunches</option>
+                    </select>
+                </div>
+            
+                <input type="file" id="upload" accept="video/*" class="actionButton">
+                <div class="widget">
+                    <label for="cameraSelect">Select Camera:</label>
+                    <select id="cameraSelect" class="actionButton"></select>
+                </div>
+                <button id="startCamera" class="actionButton" style="background-color: green;">Start Camera</button>
+                
+            </div>
+            
+            <div class="main">
+                <img id="output" src="" alt="">
+            </div>
+        </div>
+        <video id="camera" autoplay></video>
+    </div>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
