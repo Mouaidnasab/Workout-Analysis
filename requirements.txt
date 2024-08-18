@@ -82,7 +82,6 @@ inference==0.15.1
 inference-cli==0.15.1
 iniconfig==2.0.0
 ipykernel==6.29.5
-ipython==8.26.0
 itsdangerous==2.1.2
 jax==0.4.31
 jaxlib==0.4.31
