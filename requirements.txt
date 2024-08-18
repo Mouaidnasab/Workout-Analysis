@@ -209,7 +209,4 @@ waitress==3.0.0
 wcwidth==0.2.13
 websocket-client==1.8.0
 Werkzeug==3.0.1
-yarl==1.9.4
-zipp==3.19.2
-zstandard==0.23.0
-zxing-cpp==2.2.0
+
