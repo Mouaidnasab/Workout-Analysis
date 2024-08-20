@@ -68,7 +68,7 @@ pipeline {
                 script {
                     sh 'docker stop my-app || true'
                     sh 'docker rm my-app || true'
-                    sh "docker run -d --name my-app -p 8080:8080 ${DOCKER_IMAGE}:${env.BUILD_NUMBER}"
+                    sh "docker run -d --name my-app -p 3000:3000 ${DOCKER_IMAGE}:${env.BUILD_NUMBER}"
                 }
             }
         }
