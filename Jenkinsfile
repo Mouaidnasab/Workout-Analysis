@@ -17,8 +17,11 @@ pipeline {
             steps {
                 script {
                     docker.image('python:3.9').inside {
+                        // Installing necessary libraries for testing
                         sh 'apt-get update && apt-get install -y libgl1-mesa-glx'
+                        // Installing Python dependencies
                         sh 'pip install -r requirements.txt'
+                        // Running tests
                         sh 'python -m unittest discover -s tests'
                     }
                 }
@@ -34,18 +37,17 @@ pipeline {
         }
 
         stage('Build Docker Image') {
-        when {
-            expression { currentBuild.result == null }
-        }
-        steps {
-            script {
-                def customImage = docker.build("${DOCKER_IMAGE}:${env.BUILD_NUMBER}")
-                customImage.tag('latest')
-                env.DOCKER_IMAGE = customImage.imageName()
+            when {
+                expression { currentBuild.result == null }
+            }
+            steps {
+                script {
+                    def customImage = docker.build("${DOCKER_IMAGE}:${env.BUILD_NUMBER}")
+                    customImage.tag('latest')
+                    env.DOCKER_IMAGE = customImage.imageName()
+                }
             }
         }
-}
-
 
         stage('Push Docker Image') {
             when {
@@ -66,11 +68,13 @@ pipeline {
             }
             steps {
                 script {
+                    // Stop and remove the existing container if it exists
                     sh 'docker stop my-app || true'
                     sh 'docker rm my-app || true'
+                    // Run the container with the necessary library installations
                     sh """
                         docker run -d --name my-app -p 3000:3000 ${DOCKER_IMAGE}:${env.BUILD_NUMBER} /bin/bash -c '
-                        apt-get update && apt-get install -y libgl1-mesa-glx &&
+                        apt-get update && apt-get install -y libgl1-mesa-glx libglib2.0-0 &&
                         python app.py'
                     """
                 }
