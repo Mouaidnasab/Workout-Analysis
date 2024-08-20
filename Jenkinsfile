@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = "mouaidnasab/workoutanalysis"
-        DOCKER_CREDENTIALS_ID = "b2b13d96-6793-443f-b7cb-3051516fbe77"
+        DOCKER_CREDENTIALS_ID = "c2df98b1-ff47-4992-a415-a7235de00f8a"
     }
 
     stages {
