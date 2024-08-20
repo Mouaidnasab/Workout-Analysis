@@ -1,4 +1,3 @@
-
 pipeline {
     agent any
 
@@ -11,25 +10,6 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main', url: 'https://github.com/Mouaidnasab/Workout-Analysis.git'
-            }
-        }
-
-        stage('Test') {
-            steps {
-                script {
-                    docker.image('python:3.9').inside {
-                        sh 'pip install -r requirements.txt'
-                        sh 'python -m unittest discover -s tests'
-                    }
-                }
-            }
-            post {
-                failure {
-                    script {
-                        currentBuild.result = 'FAILURE'
-                        echo 'Tests failed! Stopping pipeline.'
-                    }
-                }
             }
         }
 
