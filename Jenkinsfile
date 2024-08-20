@@ -1,10 +1,9 @@
-
 pipeline {
     agent any
 
     environment {
         DOCKER_IMAGE = "mouaidnasab/workoutanalysis"
-        DOCKER_CREDENTIALS_ID = "c2df98b1-ff47-4992-a415-a7235de00f8a"
+        DOCKER_CREDENTIALS_ID = "b2b13d96-6793-443f-b7cb-3051516fbe77"
     }
 
     stages {
@@ -14,11 +13,12 @@ pipeline {
             }
         }
 
-
         stage('Test') {
             steps {
                 script {
                     docker.image('python:3.9').inside {
+                        // Install the missing library
+                        sh 'apt-get update && apt-get install -y libgl1-mesa-glx'
                         sh 'pip install -r requirements.txt'
                         sh 'python -m unittest discover -s tests'
                     }
@@ -40,7 +40,8 @@ pipeline {
             }
             steps {
                 script {
-                    DOCKER_IMAGE = docker.build("${env.DOCKER_IMAGE}:${env.BUILD_NUMBER}")
+                    def customImage = docker.build("${DOCKER_IMAGE}:${env.BUILD_NUMBER}")
+                    env.DOCKER_IMAGE = customImage.imageName()
                 }
             }
         }
@@ -52,8 +53,8 @@ pipeline {
             steps {
                 script {
                     docker.withRegistry('https://index.docker.io/v1/', env.DOCKER_CREDENTIALS_ID) {
-                        DOCKER_IMAGE.push("${env.BUILD_NUMBER}")
-                        DOCKER_IMAGE.push("latest")
+                        docker.image("${env.DOCKER_IMAGE}").push("${env.BUILD_NUMBER}")
+                        docker.image("${env.DOCKER_IMAGE}").push("latest")
                     }
                 }
             }
@@ -65,12 +66,9 @@ pipeline {
             }
             steps {
                 script {
-                    // Stop and remove the old container (if any)
                     sh 'docker stop my-app || true'
                     sh 'docker rm my-app || true'
-
-                    // Run the new container
-                    sh "docker run -d --name my-app -p 8080:8080 ${env.DOCKER_IMAGE}:latest"
+                    sh "docker run -d --name my-app -p 8080:8080 ${DOCKER_IMAGE}:latest"
                 }
             }
         }
@@ -78,7 +76,7 @@ pipeline {
 
     post {
         always {
-            cleanWs() // Clean workspace after build
+            cleanWs()
         }
         failure {
             echo 'Pipeline failed, no deployment will be performed.'
