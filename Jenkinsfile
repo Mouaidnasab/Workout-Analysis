@@ -6,6 +6,7 @@ pipeline {
         DOCKER_CREDENTIALS_ID = "c2df98b1-ff47-4992-a415-a7235de00f8a"
     }
 
+
     stages {
         stage('Checkout') {
             steps {
