@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = "mouaidnasab/workoutanalysis"
-        BASE_IMAGE = "your-dockerhub-username/workoutanalysis-base:latest"
+        BASE_IMAGE = "mouaidnasab/workoutanalysis-base:latest"
         DOCKER_CREDENTIALS_ID = "c2df98b1-ff47-4992-a415-a7235de00f8a"
     }
 
