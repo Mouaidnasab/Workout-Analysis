@@ -3,6 +3,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = "mouaidnasab/workoutanalysis"
+        BASE_IMAGE = "your-dockerhub-username/workoutanalysis-base:latest"
         DOCKER_CREDENTIALS_ID = "c2df98b1-ff47-4992-a415-a7235de00f8a"
     }
 
@@ -16,12 +17,8 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    docker.image('python:3.9').inside {
-                        // Installing necessary libraries for testing
-                        sh 'apt-get update && apt-get install -y libgl1-mesa-glx'
-                        // Installing Python dependencies
-                        sh 'pip install -r requirements.txt'
-                        // Running tests
+                    docker.image(env.BASE_IMAGE).inside {
+                        // Running tests without the need to install dependencies
                         sh 'python -m unittest discover -s tests'
                     }
                 }
@@ -71,11 +68,9 @@ pipeline {
                     // Stop and remove the existing container if it exists
                     sh 'docker stop my-app || true'
                     sh 'docker rm my-app || true'
-                    // Run the container with the necessary library installations
+                    // Run the container with the pre-installed dependencies
                     sh """
-                        docker run -d --name my-app -p 3000:3000 ${DOCKER_IMAGE}:${env.BUILD_NUMBER} /bin/bash -c '
-                        apt-get update && apt-get install -y libgl1-mesa-glx libglib2.0-0 &&
-                        python app.py'
+                        docker run -d --name my-app -p 5500:3000 ${DOCKER_IMAGE}:${env.BUILD_NUMBER} flask run --host=0.0.0.0 --port=3000
                     """
                 }
             }
