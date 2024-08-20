@@ -17,7 +17,6 @@ pipeline {
             steps {
                 script {
                     docker.image('python:3.9').inside {
-                        // Install the missing library
                         sh 'apt-get update && apt-get install -y libgl1-mesa-glx'
                         sh 'pip install -r requirements.txt'
                         sh 'python -m unittest discover -s tests'
@@ -54,7 +53,6 @@ pipeline {
                 script {
                     docker.withRegistry('https://index.docker.io/v1/', env.DOCKER_CREDENTIALS_ID) {
                         docker.image("${env.DOCKER_IMAGE}").push("${env.BUILD_NUMBER}")
-                        docker.image("${env.DOCKER_IMAGE}").push("latest")
                     }
                 }
             }
@@ -68,7 +66,7 @@ pipeline {
                 script {
                     sh 'docker stop my-app || true'
                     sh 'docker rm my-app || true'
-                    sh "docker run -d --name my-app -p 8080:8080 ${DOCKER_IMAGE}:latest"
+                    sh "docker run -d --name my-app -p 8080:8080 ${DOCKER_IMAGE}:${env.BUILD_NUMBER}"
                 }
             }
         }
