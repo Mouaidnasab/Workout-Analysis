@@ -34,16 +34,18 @@ pipeline {
         }
 
         stage('Build Docker Image') {
-            when {
-                expression { currentBuild.result == null }
-            }
-            steps {
-                script {
-                    def customImage = docker.build("${DOCKER_IMAGE}:${env.BUILD_NUMBER}")
-                    env.DOCKER_IMAGE = customImage.imageName()
-                }
+        when {
+            expression { currentBuild.result == null }
+        }
+        steps {
+            script {
+                def customImage = docker.build("${DOCKER_IMAGE}:${env.BUILD_NUMBER}")
+                customImage.tag('latest')
+                env.DOCKER_IMAGE = customImage.imageName()
             }
         }
+}
+
 
         stage('Push Docker Image') {
             when {
