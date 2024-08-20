@@ -1,3 +1,4 @@
+
 pipeline {
     agent any
 
@@ -6,11 +7,10 @@ pipeline {
         DOCKER_CREDENTIALS_ID = "c2df98b1-ff47-4992-a415-a7235de00f8a"
     }
 
-
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/Mouaidnasab/Workout-Analysis'
+                git branch: 'main', url: 'https://github.com/Mouaidnasab/Workout-Analysis.git'
             }
         }
 
