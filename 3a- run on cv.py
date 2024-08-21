@@ -14,6 +14,7 @@ video_directories = {
     "incorrect": "incorrect/"
 }
 
+
 # Get the list of all video files in the selected directory.
 video_files = [os.path.join(video_directories[folder_choice], f) for f in os.listdir(video_directories[folder_choice]) if f.endswith('.mp4')]
 
