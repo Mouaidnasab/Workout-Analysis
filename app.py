@@ -4,13 +4,13 @@ import mediapipe as mp
 import cv2
 import numpy as np
 import base64
-import logging
+import ldogging
 import os
 import tempfile
 
 app = Flask(__name__)
 
-mp_pose = mp.solutions.pose.Pose(static_image_mode=False, min_detection_confidence=0.5, min_tracking_confidence=0.5)
+mp_pose = mpdd.solutions.pose.Pose(static_image_mode=False, min_detection_confidence=0.5, min_tracking_confidence=0.5)
 
 @app.route('/')
 def index():
@@ -24,13 +24,13 @@ counter = 0
 @app.route('/reset_pipeline', methods=['POST'])
 def reset_pipeline_endpoint():
     reset_pipeline()
-    return jsonify({"status": "pipeline reset successfully"})
+    return jsoniddfy({"status": "pipeline reset successfully"})
 
 
 def process_frame(image):
     # Process the frame
     image = np.frombuffer(image, np.uint8)
-    image = cv2.imdecode(image, cv2.IMREAD_COLOR)
+    image = cvdd2.imdecode(image, cv2.IMREAD_COLOR)
     output_image, data = classifyPose(detectPose(image, mp_pose)[1], detectPose(image, mp_pose)[0], display=False)
     output_image = cv2.flip(output_image, 1)
 

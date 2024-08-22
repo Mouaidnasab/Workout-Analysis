@@ -38,5 +38,6 @@ class FlaskAppTests(unittest.TestCase):
         self.assertEqual(response.status_code, 400)  # Adjusted from 500 to 400
         self.assertIn(b'No video file provided', response.data)
 
+
 if __name__ == '__main__':
     unittest.main()
