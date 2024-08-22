@@ -7,12 +7,14 @@ WORKDIR /app
 # Install system dependencies
 RUN apt-get update && apt-get install -y libgl1-mesa-glx libglib2.0-0
 
+# Copy only the requirements.txt file
+COPY requirements.txt /app/requirements.txt
 
-# Copy the current directory contents into the container at /app
-COPY . /app
-
-# Install any needed packages specified in requirements.txt
+# Install the Python dependencies and cache them
 RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of the application code
+COPY . /app
 
 # Expose the port that Flask runs on
 EXPOSE 3000
