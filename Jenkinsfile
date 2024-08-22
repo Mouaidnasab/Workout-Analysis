@@ -19,7 +19,7 @@ pipeline {
                 script {
                     docker.image(env.BASE_IMAGE).inside {
                         // Install selenium before running tests
-                        sh 'pip install selenium'
+                        sh 'pip install selenium webdriver_manager'
                         sh 'apt-get update && apt-get install -y chromium-driver'
 
                         // Running tests without the need to install other dependencies
