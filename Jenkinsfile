@@ -14,32 +14,16 @@ pipeline {
             }
         }
 
-        stage('Setup Environment') {
-            steps {
-                // Install necessary system packages
-                sh 'apt-get update && apt-get install -y chromium-driver python3-venv'
-                
-                // Create a virtual environment
-                sh 'python3 -m venv venv'
-                
-                // Activate the virtual environment and install Python packages
-                sh '''
-                    . venv/bin/activate
-                    pip install --upgrade pip
-                    pip install selenium webdriver_manager
-                '''
-            }
-        }
-
         stage('Test') {
             steps {
                 script {
                     docker.image(env.BASE_IMAGE).inside {
+                        // Install selenium before running tests
+                        sh 'pip install selenium webdriver_manager'
+                        sh 'apt-get update && apt-get install -y chromium-driver'
+
                         // Running tests without the need to install other dependencies
-                            sh '''
-                                . venv/bin/activate
-                                python -m unittest discover -s tests
-                            '''
+                        sh 'python -m unittest discover -s tests'
                     }
                 }
             }
