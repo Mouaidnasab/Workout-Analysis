@@ -14,11 +14,20 @@ pipeline {
             }
         }
 
+        stage('Install Dependencies') {
+            steps {
+                // Install selenium and webdriver_manager using pip
+                sh 'pip install selenium webdriver_manager'
+                
+                // Update apt-get and install chromium-driver
+                sh 'apt-get update && apt-get install -y chromium-driver'
+            }
+        }
+
         stage('Test') {
             steps {
                 script {
                     docker.image(env.BASE_IMAGE).inside {
-
                         // Running tests without the need to install other dependencies
                         sh 'python -m unittest discover -s tests'
                     }
