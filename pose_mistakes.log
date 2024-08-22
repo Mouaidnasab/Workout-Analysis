@@ -129,3 +129,34 @@
 2024-08-22 14:05:38,487 - No video file in request
 2024-08-22 14:05:38,488 - No video file in request
 2024-08-22 14:05:50,002 - ValueError during video processing: Invalid video format
+2024-08-22 14:23:13,694 - No video file in request
+2024-08-22 14:23:13,700 - No video file in request
+2024-08-22 14:23:13,702 - No video file in request
+2024-08-22 14:23:20,653 - ====== WebDriver manager ======
+2024-08-22 14:23:20,952 - Get LATEST chromedriver version for google-chrome
+2024-08-22 14:23:21,779 - Get LATEST chromedriver version for google-chrome
+2024-08-22 14:23:22,096 - There is no [mac64] chromedriver "127.0.6533.119" for browser google-chrome "127.0.6533" in cache
+2024-08-22 14:23:22,131 - Get LATEST chromedriver version for google-chrome
+2024-08-22 14:23:24,199 - WebDriver version 127.0.6533.119 selected
+2024-08-22 14:23:24,200 - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/127.0.6533.119/mac-arm64/chromedriver-mac-arm64.zip
+2024-08-22 14:23:24,200 - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/127.0.6533.119/mac-arm64/chromedriver-mac-arm64.zip
+2024-08-22 14:23:24,731 - Driver downloading response is 200
+2024-08-22 14:23:27,540 - Get LATEST chromedriver version for google-chrome
+2024-08-22 14:23:27,875 - Driver has been saved in cache [/Users/mouaidnasab/.wdm/drivers/chromedriver/mac64/127.0.6533.119]
+2024-08-22 14:23:29,873 - ====== WebDriver manager ======
+2024-08-22 14:23:30,044 - Get LATEST chromedriver version for google-chrome
+2024-08-22 14:23:30,484 - Get LATEST chromedriver version for google-chrome
+2024-08-22 14:23:31,242 - Driver [/Users/mouaidnasab/.wdm/drivers/chromedriver/mac64/127.0.6533.119/chromedriver-mac-arm64/chromedriver] found in cache
+2024-08-22 14:23:32,227 - ====== WebDriver manager ======
+2024-08-22 14:23:32,397 - Get LATEST chromedriver version for google-chrome
+2024-08-22 14:23:32,705 - Get LATEST chromedriver version for google-chrome
+2024-08-22 14:23:33,288 - Driver [/Users/mouaidnasab/.wdm/drivers/chromedriver/mac64/127.0.6533.119/chromedriver-mac-arm64/chromedriver] found in cache
+2024-08-22 14:23:34,261 - ====== WebDriver manager ======
+2024-08-22 14:23:34,425 - Get LATEST chromedriver version for google-chrome
+2024-08-22 14:23:34,718 - Get LATEST chromedriver version for google-chrome
+2024-08-22 14:23:35,108 - Driver [/Users/mouaidnasab/.wdm/drivers/chromedriver/mac64/127.0.6533.119/chromedriver-mac-arm64/chromedriver] found in cache
+2024-08-22 14:23:36,314 - ====== WebDriver manager ======
+2024-08-22 14:23:36,479 - Get LATEST chromedriver version for google-chrome
+2024-08-22 14:23:36,852 - Get LATEST chromedriver version for google-chrome
+2024-08-22 14:23:37,241 - Driver [/Users/mouaidnasab/.wdm/drivers/chromedriver/mac64/127.0.6533.119/chromedriver-mac-arm64/chromedriver] found in cache
+2024-08-22 14:23:38,489 - ValueError during video processing: Invalid video format
