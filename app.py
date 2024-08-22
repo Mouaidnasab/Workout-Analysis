@@ -21,6 +21,7 @@ def index():
 counter = 0
 
 
+
 @app.route('/reset_pipeline', methods=['POST'])
 def reset_pipeline_endpoint():
     reset_pipeline()
