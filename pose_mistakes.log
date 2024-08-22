@@ -37,3 +37,95 @@
 2024-08-22 12:53:20,741 - No video file in request
 2024-08-22 12:53:20,747 - No video file in request
 2024-08-22 12:53:20,749 - No video file in request
+2024-08-22 13:23:22,266 - No video file in request
+2024-08-22 13:23:22,272 - No video file in request
+2024-08-22 13:23:22,273 - No video file in request
+2024-08-22 13:24:54,492 - No video file in request
+2024-08-22 13:24:54,500 - No video file in request
+2024-08-22 13:24:54,502 - No video file in request
+2024-08-22 13:26:34,703 - No video file in request
+2024-08-22 13:26:34,709 - No video file in request
+2024-08-22 13:26:34,712 - No video file in request
+2024-08-22 13:27:29,744 - No video file in request
+2024-08-22 13:27:29,750 - No video file in request
+2024-08-22 13:27:29,754 - No video file in request
+2024-08-22 13:28:44,067 - No video file in request
+2024-08-22 13:28:44,077 - No video file in request
+2024-08-22 13:28:44,079 - No video file in request
+2024-08-22 13:29:39,537 - No video file in request
+2024-08-22 13:29:39,543 - No video file in request
+2024-08-22 13:29:39,544 - No video file in request
+2024-08-22 13:29:39,576 - Failed to open the video file.
+2024-08-22 13:29:39,576 - ValueError during video processing: Failed to open the video file.
+2024-08-22 13:30:38,407 - No video file in request
+2024-08-22 13:30:38,413 - No video file in request
+2024-08-22 13:30:38,415 - No video file in request
+2024-08-22 13:30:38,483 - Failed to open the video file.
+2024-08-22 13:30:38,483 - ValueError during video processing: Failed to open the video file.
+2024-08-22 13:33:57,921 - No video file in request
+2024-08-22 13:33:57,929 - No video file in request
+2024-08-22 13:33:57,931 - No video file in request
+2024-08-22 13:39:33,752 - No video file in request
+2024-08-22 13:39:37,162 - No video file in request
+2024-08-22 13:39:37,169 - No video file in request
+2024-08-22 13:39:37,170 - No video file in request
+2024-08-22 13:39:37,177 - ValueError during video processing: Invalid video format
+2024-08-22 13:40:29,027 - No video file in request
+2024-08-22 13:40:32,416 - No video file in request
+2024-08-22 13:40:32,424 - No video file in request
+2024-08-22 13:40:32,426 - No video file in request
+2024-08-22 13:40:32,433 - ValueError during video processing: Invalid video format
+2024-08-22 13:42:12,476 - No video file in request
+2024-08-22 13:42:12,482 - No video file in request
+2024-08-22 13:42:12,484 - No video file in request
+2024-08-22 13:42:12,492 - ValueError during video processing: Invalid video format
+2024-08-22 13:42:31,330 - No video file in request
+2024-08-22 13:42:31,335 - No video file in request
+2024-08-22 13:42:31,336 - No video file in request
+2024-08-22 13:42:31,342 - ValueError during video processing: Invalid video format
+2024-08-22 13:44:16,789 - No video file in request
+2024-08-22 13:44:16,794 - No video file in request
+2024-08-22 13:44:16,795 - No video file in request
+2024-08-22 13:44:16,803 - ValueError during video processing: Invalid video format
+2024-08-22 13:44:37,875 - No video file in request
+2024-08-22 13:44:37,880 - No video file in request
+2024-08-22 13:44:37,881 - No video file in request
+2024-08-22 13:44:37,887 - ValueError during video processing: Invalid video format
+2024-08-22 13:44:51,548 - No video file in request
+2024-08-22 13:44:51,553 - No video file in request
+2024-08-22 13:44:51,554 - No video file in request
+2024-08-22 13:44:51,559 - ValueError during video processing: Invalid video format
+2024-08-22 13:46:21,385 - No video file in request
+2024-08-22 13:46:21,391 - No video file in request
+2024-08-22 13:46:21,392 - No video file in request
+2024-08-22 13:46:21,398 - ValueError during video processing: Invalid video format
+2024-08-22 13:48:28,712 - No video file in request
+2024-08-22 13:48:28,718 - No video file in request
+2024-08-22 13:48:28,720 - No video file in request
+2024-08-22 13:48:35,526 - ValueError during video processing: Invalid video format
+2024-08-22 13:48:58,548 - No video file in request
+2024-08-22 13:48:58,553 - No video file in request
+2024-08-22 13:48:58,554 - No video file in request
+2024-08-22 13:49:05,375 - ValueError during video processing: Invalid video format
+2024-08-22 13:57:57,364 - No video file in request
+2024-08-22 13:57:57,369 - No video file in request
+2024-08-22 13:57:57,370 - No video file in request
+2024-08-22 13:59:24,540 - No video file in request
+2024-08-22 13:59:24,546 - No video file in request
+2024-08-22 13:59:24,549 - No video file in request
+2024-08-22 14:02:01,712 - No video file in request
+2024-08-22 14:02:01,719 - No video file in request
+2024-08-22 14:02:01,721 - No video file in request
+2024-08-22 14:02:10,550 - ValueError during video processing: Invalid video format
+2024-08-22 14:03:00,364 - No video file in request
+2024-08-22 14:03:00,405 - No video file in request
+2024-08-22 14:03:00,406 - No video file in request
+2024-08-22 14:03:13,276 - ValueError during video processing: Invalid video format
+2024-08-22 14:05:00,041 - No video file in request
+2024-08-22 14:05:00,046 - No video file in request
+2024-08-22 14:05:00,046 - No video file in request
+2024-08-22 14:05:15,082 - ValueError during video processing: Invalid video format
+2024-08-22 14:05:38,481 - No video file in request
+2024-08-22 14:05:38,487 - No video file in request
+2024-08-22 14:05:38,488 - No video file in request
+2024-08-22 14:05:50,002 - ValueError during video processing: Invalid video format
