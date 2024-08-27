@@ -160,3 +160,95 @@
 2024-08-22 14:23:36,852 - Get LATEST chromedriver version for google-chrome
 2024-08-22 14:23:37,241 - Driver [/Users/mouaidnasab/.wdm/drivers/chromedriver/mac64/127.0.6533.119/chromedriver-mac-arm64/chromedriver] found in cache
 2024-08-22 14:23:38,489 - ValueError during video processing: Invalid video format
+2024-08-25 16:00:29,531 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+2024-08-25 16:00:29,531 - [33mPress CTRL+C to quit[0m
+2024-08-25 16:00:29,532 -  * Restarting with stat
+2024-08-25 16:00:31,088 -  * Debugger is active!
+2024-08-25 16:00:31,099 -  * Debugger PIN: 115-236-471
+2024-08-25 16:00:36,510 - 127.0.0.1 - - [25/Aug/2024 16:00:36] "GET / HTTP/1.1" 200 -
+2024-08-25 16:00:36,530 - 127.0.0.1 - - [25/Aug/2024 16:00:36] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-25 16:00:36,531 - 127.0.0.1 - - [25/Aug/2024 16:00:36] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-08-25 16:00:54,125 - Incorrect knee angle: 156.72
+2024-08-25 16:00:54,164 - Incorrect knee angle: 158.29
+2024-08-25 16:00:54,200 - Incorrect knee angle: 160.65
+2024-08-25 16:00:54,237 - Incorrect knee angle: 160.36
+2024-08-25 16:00:54,274 - Incorrect knee angle: 161.46
+2024-08-25 16:00:54,311 - Incorrect knee angle: 161.34
+2024-08-25 16:00:54,347 - Incorrect knee angle: 161.27
+2024-08-25 16:00:54,383 - Incorrect knee angle: 160.38
+2024-08-25 16:00:54,421 - Incorrect knee angle: 161.44
+2024-08-25 16:00:54,457 - Incorrect knee angle: 161.40
+2024-08-25 16:00:54,492 - Incorrect knee angle: 158.92
+2024-08-25 16:00:54,530 - Incorrect knee angle: 159.25
+2024-08-25 16:00:54,565 - Incorrect knee angle: 157.60
+2024-08-25 16:00:54,632 - Incorrect knee angle: 156.13
+2024-08-25 16:00:54,672 - Incorrect knee angle: 157.93
+2024-08-25 16:00:54,711 - Incorrect knee angle: 154.85
+2024-08-25 16:00:54,748 - Incorrect knee angle: 155.50
+2024-08-25 16:00:54,783 - Incorrect knee angle: 156.51
+2024-08-25 16:00:54,819 - Incorrect knee angle: 154.91
+2024-08-25 16:00:54,855 - Incorrect knee angle: 155.31
+2024-08-25 16:00:54,890 - Incorrect knee angle: 156.20
+2024-08-25 16:00:54,928 - Incorrect knee angle: 156.74
+2024-08-25 16:00:54,964 - Incorrect knee angle: 156.10
+2024-08-25 16:00:54,999 - Incorrect knee angle: 156.38
+2024-08-25 16:00:55,035 - Incorrect knee angle: 156.24
+2024-08-25 16:00:55,071 - Incorrect knee angle: 156.31
+2024-08-25 16:00:55,108 - Incorrect knee angle: 155.02
+2024-08-25 16:00:55,144 - Incorrect knee angle: 153.03
+2024-08-25 16:00:55,181 - Incorrect knee angle: 154.94
+2024-08-25 16:00:55,216 - Incorrect knee angle: 155.81
+2024-08-25 16:00:55,251 - Incorrect knee angle: 157.51
+2024-08-25 16:00:55,287 - Incorrect knee angle: 158.13
+2024-08-25 16:00:55,323 - Incorrect knee angle: 158.82
+2024-08-25 16:00:55,358 - Incorrect knee angle: 159.89
+2024-08-25 16:00:55,394 - Incorrect knee angle: 158.09
+2024-08-25 16:00:55,430 - Incorrect knee angle: 158.27
+2024-08-25 16:00:55,466 - Incorrect knee angle: 156.96
+2024-08-25 16:00:55,502 - Incorrect knee angle: 161.67
+2024-08-25 16:00:55,576 - Incorrect knee angle: 163.34
+2024-08-25 16:00:55,576 - Incorrect ankle angle: 78.85
+2024-08-25 16:00:55,611 - Incorrect knee angle: 163.35
+2024-08-25 16:00:55,611 - Incorrect ankle angle: 77.71
+2024-08-25 16:00:55,650 - Incorrect knee angle: 163.02
+2024-08-25 16:00:55,650 - Incorrect ankle angle: 77.45
+2024-08-25 16:00:55,686 - Incorrect knee angle: 162.86
+2024-08-25 16:00:55,686 - Incorrect ankle angle: 72.69
+2024-08-25 16:00:55,722 - Incorrect knee angle: 162.54
+2024-08-25 16:00:55,722 - Incorrect ankle angle: 76.45
+2024-08-25 16:00:55,759 - Incorrect knee angle: 162.69
+2024-08-25 16:00:55,759 - Incorrect ankle angle: 78.73
+2024-08-25 16:00:55,795 - Incorrect knee angle: 162.19
+2024-08-25 16:00:55,795 - Incorrect ankle angle: 79.96
+2024-08-25 16:00:55,830 - Incorrect knee angle: 162.51
+2024-08-25 16:00:55,866 - Incorrect knee angle: 162.67
+2024-08-25 16:00:55,904 - Incorrect knee angle: 162.67
+2024-08-25 16:00:55,939 - Incorrect knee angle: 162.67
+2024-08-25 16:00:55,975 - Incorrect knee angle: 161.98
+2024-08-25 16:00:56,012 - Incorrect knee angle: 162.31
+2024-08-25 16:00:56,047 - Incorrect knee angle: 162.99
+2024-08-25 16:00:56,083 - Incorrect knee angle: 162.99
+2024-08-25 16:00:56,120 - Incorrect knee angle: 162.99
+2024-08-25 16:00:56,156 - Incorrect knee angle: 162.99
+2024-08-25 16:00:56,192 - Incorrect knee angle: 162.99
+2024-08-25 16:00:56,228 - Incorrect knee angle: 162.99
+2024-08-25 16:00:56,265 - Incorrect knee angle: 162.99
+2024-08-25 16:00:56,301 - Incorrect knee angle: 162.99
+2024-08-25 16:00:56,336 - Incorrect knee angle: 162.99
+2024-08-25 16:00:56,374 - Incorrect knee angle: 162.99
+2024-08-25 16:00:56,409 - Incorrect knee angle: 162.99
+2024-08-25 16:00:56,532 - Incorrect knee angle: 162.99
+2024-08-25 16:00:56,569 - Incorrect knee angle: 162.99
+2024-08-25 16:00:56,606 - Incorrect knee angle: 162.99
+2024-08-25 16:00:56,775 - Incorrect knee angle: 162.99
+2024-08-25 16:00:56,820 - Incorrect knee angle: 162.99
+2024-08-25 16:00:56,856 - Incorrect knee angle: 162.99
+2024-08-25 16:00:56,891 - Incorrect knee angle: 163.16
+2024-08-25 16:00:56,927 - Incorrect knee angle: 163.16
+2024-08-25 16:00:56,963 - Incorrect knee angle: 163.16
+2024-08-25 16:00:56,998 - Incorrect knee angle: 163.53
+2024-08-25 16:00:57,017 - 127.0.0.1 - - [25/Aug/2024 16:00:57] "POST /upload_video HTTP/1.1" 200 -
+2024-08-25 16:01:27,305 - 127.0.0.1 - - [25/Aug/2024 16:01:27] "GET / HTTP/1.1" 200 -
+2024-08-25 16:01:27,313 - 127.0.0.1 - - [25/Aug/2024 16:01:27] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-08-25 16:01:27,313 - 127.0.0.1 - - [25/Aug/2024 16:01:27] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
