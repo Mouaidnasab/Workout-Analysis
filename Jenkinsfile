@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKER_IMAGE = "mouaidnasab/workoutanalysis"
         BASE_IMAGE = "mouaidnasab/workoutanalysis-base:latest"
-        DOCKER_CREDENTIALS_ID = "59b268da-fe2f-4c66-97d9-8421ce3f5102"
+        DOCKER_CREDENTIALS_ID = "docker"
     }
 
     stages {
